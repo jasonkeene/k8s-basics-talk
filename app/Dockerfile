@@ -20,4 +20,4 @@ EXPOSE 80
 
 COPY --from=builder /app /srv/
 WORKDIR /srv
-CMD /srv/app
+CMD [ "/srv/app" ]
